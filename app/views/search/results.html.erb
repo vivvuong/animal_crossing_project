@@ -1,0 +1,14 @@
+<h2> Villagers found: <%= @villagers.size %> </h2>
+
+<% if @villagers.empty? %>
+    <p>Sorry, no villagers found.</p>
+<% else %>
+    <ul>
+    <% @villagers.each do |villager| %>
+        <%= link_to villager.name, villager%>
+    <% end %>
+    </ul>
+<% end %>
+
+<p class="mt-5">
+<strong><%= link_to '👉 Search again?', search_index_path %></strong>

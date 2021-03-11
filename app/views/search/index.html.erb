@@ -1,0 +1,7 @@
+
+
+<%= form_with url: results_search_index_path, method: :get do |form| %>
+  <%= form.label :query, "Search for villagers:" %>
+  <%= form.text_field :query %>
+  <%= form.submit "Search" %>
+<% end %>
