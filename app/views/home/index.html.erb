@@ -1,7 +1,12 @@
+  
+  
+<p class=mb-5><strong><%= link_to '👉 All Villagers', villagers_path %></strong></p>
+
+
 <div class="columns">
 
   <div class="column">
-    <h2 class="title is-2">Species</h2>
+    <h2 class="title is-2">Animal</h2>
       <ul class="ml-5">
           <% @animals.each do |animal|%>
 
@@ -12,6 +17,7 @@
 
           <% end %>
         </ul>
+          <strong><%= link_to '👉 All Villagers', villagers_path %></strong>
   </div>
 
   <div class="column">
@@ -25,11 +31,12 @@
 
         <% end %>
       </ul>
+        <strong><%= link_to '👉 All Genders', genders_path %></strong>
   </div>
 
 
     <div class="column">
-    <h2 class="title is-2">Hobbies</h2>
+    <h2 class="title is-2">Hobby</h2>
       <ul class="ml-5">
           <% @hobbies.each do |hobby|%>
 
@@ -40,6 +47,7 @@
 
           <% end %>
         </ul>
+          <strong><%= link_to '👉 All Hobbies', hobbies_path %></strong>
   </div>
 
     <div class="column">
@@ -54,9 +62,11 @@
 
           <% end %>
         </ul>
+          <strong><%= link_to '👉 All Personality', personalities_path %></strong>
   </div>
 
 </div>
 
-  <strong><%= link_to '👉 All Villagers', villagers_path %></strong>
+
+
 

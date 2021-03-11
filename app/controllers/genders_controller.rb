@@ -4,6 +4,7 @@ class GendersController < ApplicationController
   end
 
   def show
+    @villagers = Villager.where(["gender_id = ?", params[:id]])
     @genders = Gender.find(params[:id])
   end
 end

@@ -1,2 +1,16 @@
-<h1>Hobbies#show</h1>
-<p>Find me in app/views/hobbies/show.html.erb</p>
+<% content_for(:html_title) { @hobbies.hobby } %>
+
+<h2 class="title is-2"><%= @hobbies.hobby %></h1>
+
+
+    <% @villagers.each do |villager|%>
+
+        <li>
+            <%= link_to villager.name, villager %>
+        </li>
+
+            <figure class="image is-128x128">
+        <img src=<%= villager.icon_image %>>
+    </figure>
+
+    <% end %>

@@ -1,2 +1,13 @@
-<h1>Hobbies#index</h1>
-<p>Find me in app/views/hobbies/index.html.erb</p>
+<h2 class="title is-2">All Hobbies</h1>
+<ul class="ml-5">
+    <% @hobbies.each do |hobby|%>
+
+    <li>
+        <%= link_to hobby.hobby, hobby %>
+    </li>
+
+
+
+    <% end %>
+</ul>
+

@@ -1,2 +1,12 @@
-<h1>Genders#index</h1>
-<p>Find me in app/views/genders/index.html.erb</p>
+<h2 class="title is-2">All Genders</h1>
+<ul class="ml-5">
+    <% @genders.each do |gender|%>
+
+    <li>
+        <%= link_to gender.gender, gender %>
+    </li>
+
+
+
+    <% end %>
+</ul>
