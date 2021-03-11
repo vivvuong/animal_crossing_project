@@ -5,6 +5,7 @@ Animal.delete_all
 Gender.delete_all
 Hobby.delete_all
 Personality.delete_all
+Page.delete_all
 
 filename = Rails.root.join("db/villagers.csv")
 
@@ -42,11 +43,13 @@ villagers.each do |v|
     end
 end
 
+Page.create(title: "About Us", content: "An Animal Crossing: New Horizons villager database.", permalink: "about_us")
+
 puts "Created #{Villager.count} villagers."
 puts "Created #{Animal.count} animals."
 puts "Created #{Gender.count} genders."
 puts "Created #{Hobby.count} hobbies."
 puts "Created #{Personality.count} personality."
-
+puts "Created #{Page.count} pages."
 
 
