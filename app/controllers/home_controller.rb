@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
   def index
-    @villagers = Villager.includes(:animal)
-    .limit(10)
-    @animals = Animal.limit(10)
+    @animals = Animal.all
+    @hobbies = Hobby.all
+    @personalities = Personality.all
+    @genders = Gender.all
   end
 end
