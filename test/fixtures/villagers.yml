@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  icon_image: MyString
+  photo_image: MyString
+  house_image: MyString
+  animal: one
+  gender: one
+  personality: one
+  hobby: one
+  birthday: MyString
+  catchphrase: MyString
+  favorite_song: MyString
+  favorite_saying: MyString
+
+two:
+  name: MyString
+  icon_image: MyString
+  photo_image: MyString
+  house_image: MyString
+  animal: two
+  gender: two
+  personality: two
+  hobby: two
+  birthday: MyString
+  catchphrase: MyString
+  favorite_song: MyString
+  favorite_saying: MyString
