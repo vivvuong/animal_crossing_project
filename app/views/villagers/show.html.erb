@@ -1,9 +1,9 @@
 <% content_for(:html_title) { @villager.name } %>
 
-<h2 class="title is-2"><%= @villager.name %></h1>
+<h2 class="title is-2"><%= @villager.name %></h2>
 
 <figure class="image is-128x128">
-    <img src=<%= @villager.icon_image %>> 
+    <img src=<%= @villager.icon_image %> alt="icon"> 
 </figure>
 
 <div class="content">
@@ -21,10 +21,10 @@
 
 
 <figure class="image is-square">
-    <img src=<%= @villager.photo_image %>>
+    <img src=<%= @villager.photo_image %> alt="photo_image">
 </figure>
 
 <figure class="image is-square">
-    <img src=<%= @villager.house_image %>>
+    <img src=<%= @villager.house_image %> alt="house_image">
 </figure>
 

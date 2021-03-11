@@ -1,16 +1,18 @@
 <% content_for(:html_title) { @hobbies.hobby } %>
 
-<h2 class="title is-2"><%= @hobbies.hobby %></h1>
+<h2 class="title is-2"><%= @hobbies.hobby %></h2>
 
 
     <% @villagers.each do |villager|%>
 
+    <ul>
         <li>
             <%= link_to villager.name, villager %>
         </li>
+    </ul>
 
             <figure class="image is-128x128">
-        <img src=<%= villager.icon_image %>>
+        <img src=<%= villager.icon_image %> alt="villager_image">
     </figure>
 
     <% end %>
