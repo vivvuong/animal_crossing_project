@@ -1,0 +1,35 @@
+<div class="columns">
+
+  <div class="column">
+    <h2 class="title is-2">Villagers</h2>
+      <ul class="ml-5">
+        <% @villagers.each do |villager|%>
+
+        <li>
+            <%= link_to villager.name, villager %>
+        </li>
+
+        <figure class="image is-128x128">
+            <img src=<%= villager.icon_image %>>
+        </figure>
+
+
+        <% end %>
+      </ul>
+  </div>
+
+  <div class="column">
+    <h2 class="title is-2">Species</h2>
+      <ul class="ml-5">
+          <% @animals.each do |animal|%>
+
+          <li>
+              <%= link_to animal.animal, animal %>
+          </li>
+
+
+          <% end %>
+        </ul>
+  </div>
+
+</div>
