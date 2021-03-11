@@ -1,5 +1,30 @@
+<% content_for(:html_title) { @villager.name } %>
+
 <h2 class="title is-2"><%= @villager.name %></h1>
-    <figure class="image is-128x128">
-        <img src=<%= @villager.icon_image %>>
-          <img src=<%= @villager.photo_image %>>
-    </figure>
+
+<figure class="image is-128x128">
+    <img src=<%= @villager.icon_image %>> 
+</figure>
+
+<div class="content">
+    <ul>
+        <li><strong>Animal:</strong> <%= @villager.animal.animal %></li>
+        <li><strong>Gender:</strong> <%= @villager.gender.gender %></li>
+        <li><strong>Personality:</strong> <%= @villager.personality.personality %></li>
+        <li><strong>Hobby:</strong> <%= @villager.hobby.hobby %></li>
+        <li><strong>Birthday:</strong> <%= @villager.birthday %></li>
+        <li><strong>Catchphrase: </strong><%= @villager.catchphrase %></li>
+        <li><strong>Favorite Song:</strong> <%= @villager.favorite_song %></li>
+        <li><strong>Favorite Saying:</strong> <%= @villager.favorite_saying %></li>
+    </ul>
+</div>
+
+
+<figure class="image is-square">
+    <img src=<%= @villager.photo_image %>>
+</figure>
+
+<figure class="image is-square">
+    <img src=<%= @villager.house_image %>>
+</figure>
+
